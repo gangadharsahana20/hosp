@@ -1113,11 +1113,13 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05); /* 👈 Zoom effect */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* 👈 Stronger shadow */
 }
 
 /* Icon */
