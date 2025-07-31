@@ -1630,3 +1630,385 @@ body {
     margin-bottom: 20px;
   }
 }
+
+
+/*------------support page--------------------*/
+
+/* ===== JOIN HELPEE SECTION ===== */
+.join-section {
+  background: #f4fafd;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.join-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.join-section h2 {
+  font-size: 2.4rem;
+  color: #0072c6;
+  margin-bottom: 15px;
+}
+
+.join-section p {
+  font-size: 1.05rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Stats row */
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  flex: 1 1 200px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+}
+
+.stat-card h3 {
+  font-size: 1.8rem;
+  color: #0072c6;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Profiles row */
+.profiles-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  padding: 30px 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+.profile-card i {
+  font-size: 2.5rem;
+  color: #0072c6;
+  margin-bottom: 15px;
+}
+
+.profile-card h4 {
+  font-size: 1.3rem;
+  color: #005a9e;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.profile-card button {
+  background: #0072c6;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.profile-card button:hover {
+  background: #005a9e;
+}
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-row, .profiles-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stat-card, .profile-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+
+
+/* Join Helpee Section */
+#join-helpee {
+  background-image: url('assets/join-bg.png'); /* Replace with your actual path */
+  background-size: cover;
+  background-attachment: fixed; /* Enables scrolling effect */
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 20px;
+  color: #000;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.join-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color:  rgba(18, 172, 142, 0.7); /* Light overlay for readability */
+  padding: 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+#join-helpee h2 {
+  font-size: 2.5rem;
+  color: #0072c6;
+  margin-bottom: 10px;
+}
+
+#join-helpee p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+/* Cards */
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.care-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 20px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.care-card:hover {
+  transform: translateY(-10px);
+}
+
+.care-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.care-card h3 {
+  font-size: 1.3rem;
+  color: #0072c6;
+  margin-bottom: 10px;
+}
+
+.care-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.care-card button {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.care-card button:hover {
+  background: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/*-------------------contact us--------------------------*/
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('assets/bg-contact.png') no-repeat center center/cover;
+}
+
+/* Contact section */
+#contact {
+  padding: 80px 20px;
+  color: #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glassmorphism container */
+.contact-container {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Left side - contact form */
+.contact-left {
+  flex: 1 1 55%;
+  color: #000;
+}
+
+.contact-left h2 {
+  font-size: 28px;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.contact-left p {
+  color: #000; /* Ensure black text */
+  margin-bottom: 20px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+/* Right side - map */
+.contact-right {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: stretch; /* Stretch to match the form height */
+}
+
+.contact-right iframe {
+  width: 100%;
+  height: 100%; /* Full height of the container */
+  border: 0;
+  border-radius: 10px;
+}
+
+/* WhatsApp floating button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-right iframe {
+    height: 250px;
+  }
+}
