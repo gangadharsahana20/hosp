@@ -1054,3 +1054,160 @@ header {
     margin-top: 0.5rem;
   }
 }
+
+
+/*-------------------------services page-------------------*/
+
+/* General body styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Services Section */
+#services {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Section Heading */
+.services-heading {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #0072c6;
+  text-align: center;
+}
+
+/* Grid for Services */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 per row */
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+/* Responsive Fallback */
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Individual Service Card */
+.service-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon */
+.service-card span i {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #0072c6;
+  display: inline-block;
+}
+
+/* Service Title */
+.service-card h4 {
+  margin: 12px 0 10px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Service Description */
+.service-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to section heading */
+.services-heading {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Animate each service card */
+.service-card {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+/* Staggered animation delay */
+.service-grid .service-card:nth-child(1) { animation-delay: 0.1s; }
+.service-grid .service-card:nth-child(2) { animation-delay: 0.2s; }
+.service-grid .service-card:nth-child(3) { animation-delay: 0.3s; }
+.service-grid .service-card:nth-child(4) { animation-delay: 0.4s; }
+.service-grid .service-card:nth-child(5) { animation-delay: 0.5s; }
+.service-grid .service-card:nth-child(6) { animation-delay: 0.6s; }
+.service-grid .service-card:nth-child(7) { animation-delay: 0.7s; }
+.service-grid .service-card:nth-child(8) { animation-delay: 0.8s; }
+
+
+/* Responsive layout for tablets */
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive layout for mobile phones */
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .services-heading {
+    font-size: 1.6rem;
+  }
+
+  .service-card {
+    padding: 20px 15px;
+  }
+
+  .service-card span i {
+    font-size: 24px;
+  }
+
+  .service-card h4 {
+    font-size: 1rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}
